@@ -116,9 +116,7 @@ graph TD
     F --> G[DCT (Get MFCC)]
     G --> H[Calculate Mean Vector]
     H --> I[Train Naive Bayes Model]
-    
     I --> J([Model Ready])
-    
     K[User Uploads New Audio] --> L[Feature Extraction (Same steps as above)]
     L --> M[Input to Classifier]
     J --> M
@@ -130,4 +128,5 @@ graph TD
 ```
 
 ## 📄 License
+
 This project is open-source. Feel free to use and modify it.

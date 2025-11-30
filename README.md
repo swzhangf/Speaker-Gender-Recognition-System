@@ -105,8 +105,6 @@ $$P(x_i|y) = \frac{1}{\sqrt{2\pi\sigma^2_y}} \exp\left(-\frac{(x_i - \mu_y)^2}{2
 ---
 
 ## 🔄 Algorithm Flowchart
-
-```mermaid
 graph TD
     A([Start]) --> B[Load Audio Dataset]
     B --> C{For Each File}
@@ -116,7 +114,9 @@ graph TD
     F --> G[DCT (Get MFCC)]
     G --> H[Calculate Mean Vector]
     H --> I[Train Naive Bayes Model]
+    
     I --> J([Model Ready])
+    
     K[User Uploads New Audio] --> L[Feature Extraction (Same steps as above)]
     L --> M[Input to Classifier]
     J --> M
@@ -125,8 +125,9 @@ graph TD
     N -->|P(Female) > P(Male)| P[Output: Female]
     O --> Q[Update GUI & Plot Graphs]
     P --> Q
-```
+
 
 ## 📄 License
 
 This project is open-source. Feel free to use and modify it.
+
